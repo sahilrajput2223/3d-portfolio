@@ -20,7 +20,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Develop backend things and APIs using Java.
             <br className='sm:block hidden' />
-            Also knows Python and Flutter.
+            Also knows Python and curious to learn more about Flutter and React.
           </p>
         </div>
       </div>

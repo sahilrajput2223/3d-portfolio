@@ -40,25 +40,27 @@ const About = () => {
         </h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.5, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        2.6+ years experienced Java developer with a solid understanding of enterprise-level application development. Proficient in Java, Spring Framework, Hibernate, Spring boot, Python. Strong understanding of software development methodologies, including Agile and Scrum. Passionate about delivering high-quality and efficient code.
-        <br />
-        Strong desire to learn and stay current with the latest technologies, including Artificial Intelligence, Machine Learning and Flutter.
-        <br />
-        <b className="text-white">Photoshop</b>: Skilled in image editing and manipulation, with experience in creating designs.
-        <br />
-        <b className="text-white">Blogging</b>: Passionate about writing and sharing ideas on any topics. you can read my blogs at <a href='https://sahilrajput.hashnode.dev'>Hashnode</a>
-        <br />
-        <b className="text-white">Gaming</b>: Avid player with knowledge of various platforms and games, experience in both single and multiplayer gaming.
-        <br />
-        Seeking to leverage my skills and experience to contribute to the success of a dynamic organization.
-      </motion.p>
+      <div className="sm:flex flex-row">
 
-      <div className="mt-20 flex flex-wrap gap-10">
-        {console.log(services)}
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+        <motion.p variants={fadeIn("", "", 0.5, 1)} className="mt-4 text-secondary text-[17px] max-w-xl leading-[30px]">
+          2.6+ years experienced Java developer with a solid understanding of enterprise-level application development. Proficient in Java, Spring Framework, Hibernate, Spring boot, Python. Strong understanding of software development methodologies, including Agile and Scrum. Passionate about delivering high-quality and efficient code.
+          <br />
+          Strong desire to learn and stay current with the latest technologies, including Artificial Intelligence, Machine Learning and Flutter.
+          <br />
+          <b className="text-white">Photoshop</b>: Skilled in image editing and manipulation, with experience in creating designs.
+          <br />
+          <b className="text-white">Blogging</b>: Passionate about writing and sharing ideas on any topics. you can read my blogs at <a href='https://sahilrajput.hashnode.dev'>Hashnode</a>
+          <br />
+          <b className="text-white">Gaming</b>: Avid player with knowledge of various platforms and games, experience in both single and multiplayer gaming.
+          <br />
+          Seeking to leverage my skills and experience to contribute to the success of a dynamic organization.
+        </motion.p>
+
+        <div className="ml-5 flex flex-wrap gap-10">
+          {services.map((service, index) => (
+            <ServiceCard key={service.title} index={index} {...service} />
+          ))}
+        </div>
       </div>
     </React.Fragment>
   )

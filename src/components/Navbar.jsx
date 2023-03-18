@@ -16,9 +16,12 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0, 0);
         }}>
-          <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
+          {/*} <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Sahil &nbsp;<span className='sm:block hidden'>| Computer Engineer</span>
+      </p>{*/}
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+            Sahil Rajput
           </p>
         </Link>
 
@@ -56,7 +59,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </nav >
   )
 }
 

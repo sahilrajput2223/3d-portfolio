@@ -58,10 +58,10 @@ const Works = () => {
     <React.Fragment>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>
-          My Work
+          My Contents
         </p>
         <h2 className={`${styles.sectionHeadText}`}>
-          Projects.
+          Blogs I Written.
         </h2>
       </motion.div>
 
@@ -80,4 +80,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "work")
+export default SectionWrapper(Works, "blogs")

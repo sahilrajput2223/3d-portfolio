@@ -14,7 +14,7 @@ const Tech = () => {
           What I Know
         </p>
         <h2 className={`${styles.sectionHeadText}`}>
-          Technologies I Use.
+          Technologies I Use & Learn.
         </h2>
       </motion.div>
       <div className="flex flex-row flex-wrap justify-around">

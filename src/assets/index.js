@@ -8,18 +8,20 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import django from "./tech/django.svg";
+import flutter from "./tech/flutter.svg";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
+import MySql from "./tech/MySql.svg";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
+import python from "./tech/python.svg";
+import springboot from "./tech/springboot.svg";
+import blender from "./tech/blender.svg";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import java from "./tech/java.svg";
+import photoshop from "./tech/photoshop.svg";
 
 import xangars from "./company/xangars.png";
 import otu from "./company/otu.png";
@@ -38,18 +40,20 @@ export {
   menu,
   close,
   css,
-  docker,
-  figma,
+  django,
+  flutter,
   git,
   html,
   javascript,
   mongodb,
-  nodejs,
+  MySql,
   reactjs,
-  redux,
+  python,
   tailwind,
-  typescript,
-  threejs,
+  springboot,
+  blender,
+  java,
+  photoshop,
   xangars,
   otu,
   carrent,

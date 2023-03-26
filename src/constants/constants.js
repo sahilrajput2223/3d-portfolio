@@ -116,10 +116,15 @@ const technologies = [
         name: "Flutter",
         icon: flutter,
     },
-    {
+    /*{
         name: "Tailwind CSS",
         icon: tailwind,
     },
+    {
+        name: "Blender",
+        icon: blender,
+    },
+    */
     {
         name: "MongoDB",
         icon: mongodb,
@@ -127,10 +132,6 @@ const technologies = [
     {
         name: "Photoshop",
         icon: photoshop,
-    },
-    {
-        name: "Blender",
-        icon: blender,
     },
 ];
 

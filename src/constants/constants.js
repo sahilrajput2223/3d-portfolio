@@ -4,23 +4,25 @@ import {
     creator,
     web,
     javascript,
-    typescript,
+    java,
     html,
     css,
     reactjs,
-    redux,
+    python,
     tailwind,
-    nodejs,
+    MySql,
     mongodb,
     git,
-    figma,
-    docker,
+    flutter,
+    django,
+    springboot,
+    blender,
     xangars,
     otu,
     carrent,
     jobit,
     tripguide,
-    threejs,
+    photoshop,
 } from "../assets";
 
 export const navLinks = [
@@ -71,6 +73,34 @@ const services = [
 
 const technologies = [
     {
+        name: "Java",
+        icon: java,
+    },
+    {
+        name: "SpringBoot",
+        icon: springboot,
+    },
+    {
+        name: "git",
+        icon: git,
+    },
+    {
+        name: "MySql",
+        icon: MySql,
+    },
+    {
+        name: "React JS",
+        icon: reactjs,
+    },
+    {
+        name: "Python",
+        icon: python,
+    },
+    {
+        name: "Django",
+        icon: django,
+    },
+    {
         name: "HTML 5",
         icon: html,
     },
@@ -83,44 +113,24 @@ const technologies = [
         icon: javascript,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "Flutter",
+        icon: flutter,
     },
     {
         name: "Tailwind CSS",
         icon: tailwind,
     },
     {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
         name: "MongoDB",
         icon: mongodb,
     },
     {
-        name: "Three JS",
-        icon: threejs,
+        name: "Photoshop",
+        icon: photoshop,
     },
     {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
+        name: "Blender",
+        icon: blender,
     },
 ];
 

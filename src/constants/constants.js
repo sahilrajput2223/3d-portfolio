@@ -116,10 +116,15 @@ const technologies = [
         name: "Flutter",
         icon: flutter,
     },
-    {
+    /*{
         name: "Tailwind CSS",
         icon: tailwind,
     },
+    {
+        name: "Blender",
+        icon: blender,
+    },
+    */
     {
         name: "MongoDB",
         icon: mongodb,
@@ -127,10 +132,6 @@ const technologies = [
     {
         name: "Photoshop",
         icon: photoshop,
-    },
-    {
-        name: "Blender",
-        icon: blender,
     },
 ];
 
@@ -157,7 +158,7 @@ const experiences = [
         title: "Java Developer",
         company_name: "Xangars Infratech",
         icon: xangars,
-        iconBg: "#E6DEDD",
+        iconBg: "#383E56",
         date: "Feb 2021 - Dec 2021",
         points: [
             "Understanding of requirement",
@@ -172,7 +173,7 @@ const experiences = [
         title: "Java Developer",
         company_name: "Xangars Solutions",
         icon: xangars,
-        iconBg: "#383E56",
+        iconBg: "#E6DEDD",
         date: "July 2020 - Jan 2021",
         points: [
             "Understanding of requirement",

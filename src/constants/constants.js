@@ -45,11 +45,11 @@ export const navLinks = [
     /*{
         id: "blogs",
         title: "Blogs",
-    },
+    },*/
     {
         id: "contact",
         title: "Contact",
-    },*/
+    },
 ];
 
 const services = [

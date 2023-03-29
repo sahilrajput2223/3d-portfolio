@@ -5,6 +5,10 @@ import { styles } from '../style'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const reactSwal = withReactContent(Swal)
 
 const Contact = () => {
   const formRef = React.useRef();
@@ -35,7 +39,15 @@ const Contact = () => {
     },
       'pyzpVvAW8eSCEEr5B').then(() => {
         setLoading(false);
-        alert("Thank You, Will Get Back to You.")
+        reactSwal.fire({
+          title: <strong>Thank You !</strong>,
+          html: <p>Will Get Back to You.</p>,
+          icon: 'success',
+          didOpen: () => {
+            MySwal.showLoading()
+          }
+        });
+        //alert("Thank You, Will Get Back to You.")
         setForm({
           name: '',
           email: '',
@@ -44,7 +56,15 @@ const Contact = () => {
       }, (error) => {
         setLoading(false);
         console.log(error);
-        alert("Something Went Wrong!")
+        reactSwal.fire({
+          title: <strong>Try Again !</strong>,
+          html: <p>Something Went Wrong!</p>,
+          icon: 'error',
+          didOpen: () => {
+            MySwal.showLoading()
+          }
+        });
+        //alert("Something Went Wrong!")
       });
   }
 

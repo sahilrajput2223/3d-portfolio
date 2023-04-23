@@ -5,6 +5,10 @@ import { styles } from '../style'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const reactSwal = withReactContent(Swal)
 
 const Contact = () => {
   const formRef = React.useRef();
@@ -35,7 +39,15 @@ const Contact = () => {
     },
       'pyzpVvAW8eSCEEr5B').then(() => {
         setLoading(false);
-        alert("Thank You, Will Get Back to You.")
+        reactSwal.fire({
+          title: <strong>Thank You !</strong>,
+          html: <p>Will Get Back to You.</p>,
+          icon: 'success',
+          didOpen: () => {
+            MySwal.showLoading()
+          }
+        });
+        //alert("Thank You, Will Get Back to You.")
         setForm({
           name: '',
           email: '',
@@ -44,7 +56,15 @@ const Contact = () => {
       }, (error) => {
         setLoading(false);
         console.log(error);
-        alert("Something Went Wrong!")
+        reactSwal.fire({
+          title: <strong>Try Again !</strong>,
+          html: <p>Something Went Wrong!</p>,
+          icon: 'error',
+          didOpen: () => {
+            MySwal.showLoading()
+          }
+        });
+        //alert("Something Went Wrong!")
       });
   }
 
@@ -62,15 +82,15 @@ const Contact = () => {
 
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4 ">Your Name</span>
-            <input type="text" name='name' value={form.name} onChange={handleChange} placeholder="What's your name?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            <input type="text" required name='name' value={form.name} onChange={handleChange} placeholder="What's your name?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4 ">Your Email</span>
-            <input type="email" name='email' value={form.email} onChange={handleChange} placeholder="What's your email?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            <input type="email" required name='email' value={form.email} onChange={handleChange} placeholder="What's your email?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4 ">Your Message</span>
-            <textarea rows='8' name='message' value={form.message} onChange={handleChange} placeholder="What do you want to say?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            <textarea rows='8' name='message' required value={form.message} onChange={handleChange} placeholder="What do you want to say?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
           </label>
           <button type='submit' className='bg-tertiary py-3 px-8 outline-none w-fit font-bold text-white shadow-md  shadow-primary rounded-xl'>
             {loading ? 'Sending...' : 'Send'}

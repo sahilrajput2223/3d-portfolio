@@ -21,6 +21,8 @@
     "react-parallax-tilt": "^1.7.114",
     "react-router-dom": "^6.9.0",
     "react-vertical-timeline-component": "^3.6.0",
+    "sweetalert2": "^11.7.3",
+    "sweetalert2-react-content": "^5.0.7",
     "three": "^0.150.1"
   },
   "devDependencies": {

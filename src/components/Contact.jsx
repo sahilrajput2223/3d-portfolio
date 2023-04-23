@@ -82,15 +82,15 @@ const Contact = () => {
 
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4 ">Your Name</span>
-            <input type="text" name='name' value={form.name} onChange={handleChange} placeholder="What's your name?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            <input type="text" required name='name' value={form.name} onChange={handleChange} placeholder="What's your name?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4 ">Your Email</span>
-            <input type="email" name='email' value={form.email} onChange={handleChange} placeholder="What's your email?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            <input type="email" required name='email' value={form.email} onChange={handleChange} placeholder="What's your email?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4 ">Your Message</span>
-            <textarea rows='8' name='message' value={form.message} onChange={handleChange} placeholder="What do you want to say?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            <textarea rows='8' name='message' required value={form.message} onChange={handleChange} placeholder="What do you want to say?" className='bg-tertiary px-6 py-4 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
           </label>
           <button type='submit' className='bg-tertiary py-3 px-8 outline-none w-fit font-bold text-white shadow-md  shadow-primary rounded-xl'>
             {loading ? 'Sending...' : 'Send'}

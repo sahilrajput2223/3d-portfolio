@@ -43,7 +43,7 @@ const About = () => {
       <div className="sm:flex flex-row">
 
         <motion.p variants={fadeIn("", "", 0.5, 1)} className="mt-4 text-secondary text-[17px] max-w-xl leading-[30px]">
-          2.6+ years experienced Java developer with a solid understanding of enterprise-level application development. Proficient in Java, Spring Framework, Hibernate, Spring boot, Python. Strong understanding of software development methodologies, including Agile and Scrum. Passionate about delivering high-quality and efficient code.
+          4+ years experienced Java developer with a solid understanding of enterprise-level application development. Proficient in Java, Spring Framework, Hibernate, Spring boot, Python. Strong understanding of software development methodologies, including Agile and Scrum. Passionate about delivering high-quality and efficient code.
           <br />
           Strong desire to learn and stay current with the latest technologies, including Artificial Intelligence, Machine Learning and Flutter.
           <br />
